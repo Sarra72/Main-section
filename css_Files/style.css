@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white; 
+    font-family: 'Aldrich', sans-serif;
+}
+
+html{
+    --white:white;
+    --black:black;
+    --baseColor:rgb(255, 194, 141);
+}
+
+nav{
+    text-align: center;
+    margin-top: -30px;
+}
+
+.home{
+    text-decoration: underline;
+    text-decoration-color: var(--baseColor);
+    text-decoration-thickness:10%;
+    text-underline-position:under;
+    text-underline-offset:var(30px);
+}
+
+.txt,.num{
+    text-align: right;
+    padding-right: 100px; 
+}
+
+.txt{
+    margin-top: -25px;
+    font-size: 12px;
+}
+
+.num{
+font-size: 19px;
+padding-top: 10px;
+color: var(--baseColor);
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(../imgs/back.jpg);
+    background-size: cover;
+}
+
+.staging{
+    font-family:"Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stage{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.dot{
+    font-family: sans-serif;
+    color: var(--baseColor);
+    font-size: 30px;
+}
+
+a{  
+    font-family:"Poppins", sans-serif;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: smaller;
+    padding-inline: 20px;
+    
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 200px;
+}
+
+.gthan, .lthan{
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-top: -30px;
+    font-family: monospace;
+    font-weight: lighter; 
+}
+
+.gthan{
+    position: absolute;
+    left:110px;
+}
+
+.lthan{
+    position: absolute;
+    right:110px;
+}
+
+.gthan:before{
+    content:"";
+    position: absolute;
+    /* right:-3px;
+    top:20px;
+    width:calc(100% - 15px);
+    height: calc(100% - 18px);
+    background-color: var(--black);
+    transition: 0.5s ease-in-out; */
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    border-left: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 0 0 4px;
+}
+
+.gthan:after{
+    content:"";
+    position: absolute;
+    /* top:-2px;
+    right:20px;
+    width:calc(100% - 15px);
+    height: calc(100% - 18px);
+    background-color: var(--black);
+    transition: 0.5s ease-in-out;   */
+    right: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-right: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 4px 0 0 ;
+}
+
+.lthan:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    border-left: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 0 0 4px;
+}
+
+.lthan:after{
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-right: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 4px 0 0 ;  
+}
+
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.button:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    border-left: 2px solid rgba(255,255,255,0.3);
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 0 0 4px;
+}
+
+.button:after{
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-right: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid rgba(255,255,255,0.3);
+    border-radius: 0 4px 0 0 ;   
+}
+
+.button span{
+    position: relative;
+    z-index: 3;
+}
+
+.footer span{
+    font-size:10px;
+    display: block;
+    text-align: center;
+    margin-top: 180px;
+    opacity: 0.5;
+}
+
+.icons{
+  
+    margin-right:100px ;
+    float: right;
+    margin-top: -20px;
+}
+
+i{
+    margin-left:20px ;
+}
+
+.number{
+    display: inline;
+    font-size: 12px;
+    font-family:"Poppins", sans-serif;
+    padding-right: 40px;
+}
+
+.line{
+    display: inline;
+}
+
+.number,.line{
+    padding-right: 90px; 
+}
+
+.slider{
+    padding-left: 100px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.line{
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+}
+
+
+/* .gthan,.lthen{
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid rgba(211, 211, 211,0.5);
+    border-radius: 4px;
+    font-family:"Poppins", sans-serif;
+    font-size: larger;
+
+}
+.gthan{
+    margin-right: 1200px;
+    
+} */
